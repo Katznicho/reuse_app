@@ -25,7 +25,7 @@ const SimiliarProducts = () => {
         <View>
           <Image
             source={{
-              uri: 'https://www.thefamouspeople.com/profiles/images/leonardo-da-vinci-1.jpg',
+              uri: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZnVybml0dXJlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
             }}
             style={{
               width: 100,
