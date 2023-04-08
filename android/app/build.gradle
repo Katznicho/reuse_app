@@ -1,5 +1,5 @@
 apply plugin: "com.android.application"
-
+apply plugin: 'com.google.gms.google-services' // <- Add this line
 import com.android.build.OutputFile
 import org.apache.tools.ant.taskdefs.condition.Os
 
@@ -250,6 +250,14 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    implementation 'com.google.android.play:integrity:1.1.0'
+    implementation 'com.google.firebase:firebase-analytics'
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:31.4.0')
+    // Add the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-auth'
 
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
