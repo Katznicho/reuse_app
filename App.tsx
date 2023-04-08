@@ -6,8 +6,7 @@ import FlashMessage from 'react-native-flash-message';
 import { QueryClient, QueryClientProvider } from 'react-query'
 import BaseNavigation from './src/BaseNavigation/BaseNavigation';
 import NetInfo from "@react-native-community/netinfo";
-import { LogBox, View, Text } from 'react-native';
-import auth from '@react-native-firebase/auth';
+import { View, Text } from 'react-native';
 import { generalstyles } from './src/generalstyles/generalstyles';
 import { theme } from './src/theme/theme';
 import { Button } from 'react-native-paper';
@@ -26,10 +25,7 @@ export default function App() {
 
   useEffect(() => {
     checkInternet();
-    LogBox.ignoreAllLogs();
-    if (auth().currentUser) {
-      auth().signOut();
-    }
+
   }, []);
   return connected ?(
     <Provider store={store}>

@@ -4,6 +4,7 @@ import { theme } from '../theme/theme';
 export const generalstyles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: theme.colors.primary,
   },
   background: {
     backgroundColor: theme.colors.white,

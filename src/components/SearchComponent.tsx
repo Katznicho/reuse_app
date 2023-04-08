@@ -25,6 +25,7 @@ const SearchComponent = ({
         theme={{ colors: { primary: theme.colors.black } }}
         value={value}
         placeholderTextColor={theme.colors.placeholder}
+      
       />
     </View>
   );
