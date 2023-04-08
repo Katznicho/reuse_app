@@ -1,4 +1,4 @@
-// In App.js in a new project
+
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreeen from '../../screens/HomeScreens/HomeScreeen';
@@ -12,6 +12,7 @@ import ReviewStack from '../../screens/HomeScreens/ReviewStack/ReviewStack';
 import { IconButton } from 'react-native-paper';
 import { useNavigation } from '@react-navigation/native';
 import WriteReview from '../../screens/HomeScreens/ReviewStack/WriteReview';
+import ProductDetails from '../../screens/HomeScreens/ProductDetails';
 
 
 
@@ -133,6 +134,14 @@ function HomeStack() {
       />
 
       {/* write a review */}
+
+      <Stack.Screen
+        name="ProductDetails"
+        component={ProductDetails}
+        options={{
+          headerShown: false
+        }}
+      />
 
 
 

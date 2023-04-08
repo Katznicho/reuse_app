@@ -7,6 +7,7 @@ import { ScrollView } from 'react-native-gesture-handler'
 import Donaters from '../../components/Donaters'
 import SearchComponent from '../../components/SearchComponent'
 import { theme } from '../../theme/theme';
+import ScrollCard from '../../components/ScrollCard'
 
 
 const HomeScreeen = () => {
@@ -43,19 +44,25 @@ const HomeScreeen = () => {
         {/* categories */}
 
         {/* most receommended */}
-        <TextTypes text="Our Recommendations" />
+        <TextTypes text="Our Recommendations"  />
+         <ScrollCard
+             
+          />
         {/* most recommended */}
 
         {/* popular */}
         <TextTypes text="Most Popular" />
+        <ScrollCard/>
         {/* popular */}
 
         {/* nearby */}
         <TextTypes text="Near by You" />
+        <ScrollCard/>
         {/* nearby */}
 
         {/* nearby */}
         <TextTypes text="Most Searched" />
+        <ScrollCard/>
         {/* nearby */}
 
         {/* top donaters */}

@@ -92,7 +92,7 @@ import { donaters } from '../fakedata/data';
       fontWeight: 'bold',
     },
     containerStyle: {
-      marginHorizontal: 0,
+      marginHorizontal: 5,
     },
   });
   

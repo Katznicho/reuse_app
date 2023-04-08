@@ -1,6 +1,5 @@
 import { StyleSheet, View, TextInput } from 'react-native';
-import React, { useState } from 'react';
-// import Textarea from 'react-native-textarea';
+import React, { useState } from 'react'
 import { theme } from '../theme/theme';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
