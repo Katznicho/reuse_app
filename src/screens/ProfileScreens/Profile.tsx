@@ -2,8 +2,8 @@ import { SafeAreaView, ScrollView } from 'react-native';
 import React, { useState } from 'react';
 import { theme } from '../../theme/theme';
 import HeadProfileCard from '../../components/HeadProfileCard';
-import Subscription from '../../components/Subscription';
 import ProfileDetailsCard from '../../components/ProfileCardDetails';
+import ProfileCard from '../../components/ProfileCard';
 
 
 
@@ -22,10 +22,7 @@ const Profile = () => {
       name: 'Settings',
       screen: 'Settings',
     },
-    {
-      name: 'Buy a Package',
-      screen: 'Packages',
-    },
+
     {
       name: 'About Us',
       screen: 'AboutUs',
@@ -44,12 +41,12 @@ const Profile = () => {
     >
       <ScrollView showsVerticalScrollIndicator={false}>
         {/* header profile card */}
-        <HeadProfileCard  />
+        <HeadProfileCard />
         {/* header profile card */}
 
-        {/* subscription */}
-        <Subscription />
-        {/* subscription */}
+        {/* card section */}
+        <ProfileCard />
+        {/* card section */}
 
         {/* profile details */}
         <ProfileDetailsCard details={profile_details} showSwitch={false} />
