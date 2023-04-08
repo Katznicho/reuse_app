@@ -51,7 +51,7 @@ const ScrollCardDetails = ({
             {/* rating */}
             <View style={[generalstyles.centerContent, generalstyles.flexStyles]}>
                 {
-                    Array(4).fill(item.rating).map((_, index) => (
+                    Array(item.rating).fill(item.rating).map((_, index) => (
                         <AntDesign
                             name="star"
                             color={theme.colors.buttonColor}

@@ -8,7 +8,7 @@ export const products= [
       sessions: 10,
       packageType: 'PRO',
       packageImageUri:'https://images.unsplash.com/file-1636585210491-f28ca34ea8ecimage?dpr=2&auto=format&fit=crop&w=416&q=60',
-      rating:3
+      rating:5
     },
     {
       id: 2,
