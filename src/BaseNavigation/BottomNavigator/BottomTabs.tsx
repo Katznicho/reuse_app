@@ -9,6 +9,7 @@ import { theme } from '../../theme/theme';
 import ProfileStack from '../../screens/ProfileScreens/ProfileStack';
 import NotificationStack from '../../screens/NotificationScreens/NotificationStack';
 import BookingStack from '../../screens/BookingDetailsScreen/BookingStack';
+import CreateStack from '../StackNavigator/CreateStack';
 
 
 
@@ -61,7 +62,7 @@ export default function BottomTabs() {
       }}
       />
       <Tab.Screen name="Create" 
-      component={BookingStack} 
+      component={CreateStack} 
       options={{
         tabBarLabel: 'Create',
         tabBarIcon: ({ color }) => (
