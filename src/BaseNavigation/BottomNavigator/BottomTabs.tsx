@@ -1,5 +1,4 @@
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import { Text, View } from 'react-native';
 import HomeStack from '../StackNavigator/HomeStack';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
@@ -8,29 +7,15 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import { theme } from '../../theme/theme';
 import ProfileStack from '../../screens/ProfileScreens/ProfileStack';
 import NotificationStack from '../../screens/NotificationScreens/NotificationStack';
-import BookingStack from '../../screens/BookingDetailsScreen/BookingStack';
 import CreateStack from '../StackNavigator/CreateStack';
+import { TopBars } from '../TopTabsNavigator/TopBars';
 
 
 
 
 const Tab = createMaterialBottomTabNavigator();
 
-const HomeScreen = () => {
-    return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text>Home!</Text>
-        </View>
-    );
-};
 
-const SettingsScreen = () => {
-    return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text>Settings!</Text>
-        </View>
-    );
-};
 
 
 export default function BottomTabs() {
@@ -74,6 +59,22 @@ export default function BottomTabs() {
         ),
       }}
       />
+      {/* mine */}
+      <Tab.Screen name="Mine" 
+      component={TopBars} 
+      options={{
+        tabBarLabel: 'Mine',
+        tabBarIcon: ({ color }) => (
+            <AntDesign
+            name="filetext1"
+            color={color}
+            size={26}
+          />
+        ),
+      }}
+      />
+      {/* mine */}
+
       {/* saved books */}
       <Tab.Screen name="Notifications"
         component={NotificationStack}
